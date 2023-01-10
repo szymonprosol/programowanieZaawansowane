@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
+/*@Service
 @RequiredArgsConstructor
 public class DbService {
 
@@ -30,4 +30,4 @@ public class DbService {
     public void deleteTask(final Long id) {
         repository.deleteById(id);
     }
-}
+}*/
