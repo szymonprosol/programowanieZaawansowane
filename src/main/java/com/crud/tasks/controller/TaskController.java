@@ -3,9 +3,8 @@ package com.crud.tasks.controller;
 import com.crud.tasks.domain.Task;
 import com.crud.tasks.domain.TaskDto;
 import com.crud.tasks.mapper.TaskMapper;
-//import com.crud.tasks.service.DbService;
+import com.crud.tasks.service.DbService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Profile;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class TaskController {
 
-    /*private final DbService service;
+    private final DbService service;
     private final TaskMapper taskMapper;
 
     @GetMapping(value = "getTasks")
@@ -48,5 +47,5 @@ public class TaskController {
         Task task = taskMapper.mapToTask(taskDto);
         service.saveTask(task);
 
-    }*/
+    }
 }

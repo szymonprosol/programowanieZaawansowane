@@ -15,7 +15,10 @@ public class TaskMapper {
         return new Task(
                 taskDto.getId(),
                 taskDto.getTitle(),
-                taskDto.getContent()
+                taskDto.getContent(),
+                taskDto.getFinish_date(),
+                taskDto.getStatus(),
+                taskDto.getAssigned_to()
         );
     }
 
@@ -23,7 +26,10 @@ public class TaskMapper {
         return new TaskDto(
                 task.getId(),
                 task.getTitle(),
-                task.getContent()
+                task.getContent(),
+                task.getFinish_date(),
+                task.getStatus(),
+                task.getAssigned_to()
         );
     }
 
