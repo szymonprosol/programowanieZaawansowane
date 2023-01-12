@@ -23,13 +23,4 @@ public class Task {
 
     @Column(name = "description")
     private String content;
-
-    @Column(name = "finish_date")
-    private String finish_date;
-
-    @Column(name = "status")
-    private String status;
-
-    @Column(name = "assigned_to")
-    private String assigned_to;
 }
