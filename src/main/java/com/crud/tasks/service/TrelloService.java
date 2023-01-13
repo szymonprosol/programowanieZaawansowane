@@ -11,7 +11,6 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class TrelloService {
-    public static final String SUBJECT = "Tasks: New Trello card";
     private final TrelloClient trelloClient;
 
     public List<TrelloBoardDto> fetchTrelloBoards() {
