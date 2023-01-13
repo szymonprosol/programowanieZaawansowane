@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
-@Profile("heroku")
 @RestController
 @RequestMapping("/v1/trello")
 @CrossOrigin(origins = "*")
