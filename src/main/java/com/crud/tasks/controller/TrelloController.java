@@ -19,10 +19,7 @@ public class TrelloController {
 
     @GetMapping("getTrelloBoards")
     public List<TrelloBoardDto> getTrelloBoards() {
-        return List.of(new TrelloBoardDto("6194104d074dab0ef50427a1", "Kodilla Application", List.of(
-                new TrelloListDto("6194104d074dab0ef50427a2", "Do zrobienia", false),
-                new TrelloListDto("6194104d074dab0ef50427a3", "W trakcie", false),
-                new TrelloListDto("6194104d074dab0ef50427a4", "Zrobione", false)) ));
+        return trelloService.fetchTrelloBoards();
     }
 
     @PostMapping("createTrelloCard")
